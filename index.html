@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cefed47a58.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Bitcount+Grid+Double:wght@100..
+900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pochaevsk&family=Roboto+Mono:ital,wght@0,100..700;1,100.
+.700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Schoolbell&family=Sigmar&family=Smooch+Sans:wght@100.
+.900&family=Snowburst+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav class="nav">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">My Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" >
+            <p class="title">
+                Aspiring Full Stack Developer
+            </p>
+            <h1>
+                Hi, I am <span style="color: rgb(157,0,0);">Utkarsha.</span>
+            </h1>
+        </div>
+        </div>
+    </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1 class="subtitle about">
+                        About Me
+                    </h1>
+                    <p class="define-me">
+                       Hi, i am Utkarsha Shende.I have recently completed my Master's in Computer Application from Datta Meghe University, Wardha.
+                        I'm passionate to build responsive web experiences.What truly excites me is the continuous journey of learning new 
+                        languages and technologies, and the immense satisfactionthat comes from designing websites that look and perform beautifully
+                        across all devices. I am actively expanding my skill set into back-end technologies, with an aspiration to become a
+                        versatile Full-Stack Developer and contribute to
+                        innovative web solutions.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                       
+                         <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span> HTML</li>
+                              <li> <span> CSS</li>
+                                <li> <span> JAVASCRIPT</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span> MCA</span><br>DMIHER, Wardha.</li>
+                              <li> <span> B.Sc</span><br>Amravati University.</li>
+                                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!--my project-->
+<div id="services">
+<div class="container">
+  <h1 class="subtitle project">My Projects</h1>
+  <div class="service-list">
+<div>
+    <img src="./tic-(2).png">
+    <h2>
+      Tic Tac Toe
+    </h2>
+  
+    <a href="https://utkarshastictactoe.netlify.app/" target="_blank">
+Click Here For Live Demo
+    </a>
+</div>
+<div>
+    <i class="fa-solid fa-cart-shopping"></i>
+    <h2>
+      Product Preview Cart
+    </h2>
+   
+    <a href="https://productpreviewcart.netlify.app/" target="_blank">
+Click Here For Live Demo
+    </a>
+</div>
+<div>
+    <i class="fa-solid fa-dice"></i>
+    <h2>
+        Dice Roller
+    </h2>
+   
+    <a href="https://rollingdice12.netlify.app/" target="_blank">
+Click Here For Live Demo
+    </a>
+</div>
+<div>
+    <i class="fa-solid fa-list"></i>
+    
+    <h2>
+       To-Do List 
+    </h2>
+   
+    <a href="https://utkarsha-todolist.netlify.app/" target="_blank">
+Click Here For Live Demo
+    </a>
+</div>
+<div>
+  <i class="fa-solid fa-clock"></i>
+    <h2>
+       Digital Clock 
+    </h2>
+   
+    <a href="https://utkarshasdigitalclock.netlify.app/" target="_blank">
+Click Here For Live Demo
+    </a>
+</div>
+  </div>
+                    
+</div>
+</div>
+
+<!--link-->>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">Link</h1>
+<div class="work-list">
+    <div class="work">
+        <h3>
+               Github 
+            </h3>
+        <div class="layer">
+           
+          <p>
+             Link 
+          </p>
+            <a href="https://github.com/Utkarshende" target="_blank">
+<i class="fa-solid fa-link"></i>
+            </a>
+        </div>
+    </div>
+      <div class="work">
+       <h3>
+                Netlify 
+            </h3>
+         <div class="layer">
+            
+            <p>
+              Link
+            </p>
+            <a href="https://app.netlify.com/teams/utkarshende/projects" target="_blank">
+<i class="fa-solid fa-link"></i>
+            </a>
+        </div>
+    </div>
+      <div class="work">
+        <h3>
+             Peerlist 
+        </h3>
+         <div class="layer">
+
+            <p>Link</p>
+
+            <a href="https://peerlist.io/utkarsha_" target="_blank">
+<i class="fa-solid fa-link"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<a href="#" class="btn">
+See more
+</a>
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle contact">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>utkarshapd1403@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>9022****03 </p>
+                <div class="social-icon">
+                    <a href="http://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./pdf-file/Resume For SDE.pdf" download class="btn btn-2">Download CV</a>
+            </div>
+             <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg"></span>
+             </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright © 2025 Utkarsha Shende <i class="fa-solid fa-heart"></i> All Rights Reserved.
+            
+        </p>
+    </div>
+</div>
+
+    <script>
+     var tablinks=document.getElementsByClassName("tab-links");
+      var tabcontents=document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+
+var sidemenu=document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right= "-200px";
+}
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxYN7MuDloo_cqMhFf2InoJI71s-f6hAS9lrovLbAN4c6vMiwCDRwRL3u3EAaS8IJ3cyw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully";
+        setTimeout(function(){
+            msg.innerHTML=""
+        },500)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
