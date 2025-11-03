@@ -114,22 +114,26 @@ color: #333333;
     border-radius: 25px;
     box-shadow: 0 0 5px 2px rgba(0, 121, 107, 0.4) ;
     }
+    /* ... (Other CSS remains unchanged) ... */
+
     .subtitle{
+            /* FONT SIZE CHANGE: Reduced from 60px to 48px */
             font-size: 48px;
             font-weight: 600;
             color: #004D40;
-            transition: font-size 0.5s;
+            transition: font-size 0.5s, border-radius 0.3s, box-shadow 0.3s, color 0.3s, transform 0.3s;
             height: fit-content;
             width: fit-content;
            display: block;
-           transition: border-radius border 0.3s;
            padding: 5px;
+           border-bottom: 3px solid #00796B; 
         }
         .subtitle:hover
         {
-          
-          box-shadow: 0 0 5px 2px rgba(0, 121, 107, 0.4) ;
-          border-radius: 25px;
+          transform: scale(1.03); 
+          color: #00796B; 
+          border-radius: 5px; 
+          border-bottom: 3px solid #004D40; 
         }
         .about{
           margin-top: -80px;
@@ -185,7 +189,7 @@ color: #333333;
          .tab-contents.active-tab{
              display: block;
          }
-         /* --- Services Section --- */
+         
          #service{
              padding: 30px 0;
          }
@@ -225,8 +229,8 @@ color: #333333;
              display: inline-block;
          }
          .service-list div:hover{
-         background: #b7f0e9;
-         transform: translateY(-15px);
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 121, 107, 0.6);
          }
          /* --- Portfolio Section --- */
          #portfolio{
@@ -394,18 +398,14 @@ color: #555555;
              font-size: 25px;
          }
 
-/*
---- Media Queries for Responsiveness ---
-All changes below only apply to screens less than 600px wide.
-*/
+
 @media only screen and (max-width: 600px){
 
-    /* Overall Layout Changes */
+
     .container {
         padding: 10px 5%;
     }
 
-    /* Header & Navigation Adjustments */
     .nav {
         justify-content: space-between;
         align-items: center;
@@ -425,7 +425,6 @@ All changes below only apply to screens less than 600px wide.
         z-index: 300;
     }
 
-    /* Mobile Menu Styling (Side-out menu) */
     nav ul{
         background: #F8F8F8;
         position: fixed;
@@ -446,17 +445,14 @@ All changes below only apply to screens less than 600px wide.
         color: #333333;
     }
 
-    /* Text/Title Size Scaling */
     .header-text{
         margin-top: 10%;
         font-size: 16px;
     }
     .header-text h1{
-        /* FONT SIZE CHANGE: Reduced from 30px to 28px on mobile */
         font-size: 28px;
     }
     .subtitle{
-        /* FONT SIZE CHANGE: Reduced from 40px to 32px on mobile */
         font-size: 32px;
     }
     .tab-links{
@@ -464,7 +460,6 @@ All changes below only apply to screens less than 600px wide.
         margin-right: 20px;
     }
 
-    /* Stacking Columns (About/Contact) */
     .row {
         display: block;
     }
@@ -475,12 +470,10 @@ All changes below only apply to screens less than 600px wide.
         margin-bottom: 30px;
     }
 
-    /* Services List Stacking */
     .service-list {
         grid-template-columns: 1fr;
     }
 
-    /* Portfolio Work Stacking */
     .work-list {
         justify-content: center;
         gap: 20px;
